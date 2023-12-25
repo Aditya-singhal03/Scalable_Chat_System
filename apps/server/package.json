@@ -1,0 +1,19 @@
+{
+  "name": "sever",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ioredis": "^5.3.2",
+    "socket.io": "^4.7.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.0.4"
+  }
+}
